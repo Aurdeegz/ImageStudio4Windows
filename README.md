@@ -1,4 +1,4 @@
-#LI-COR Image Studio Lite Version 5.2 (Windows)
+# LI-COR Image Studio Lite Version 5.2 (Windows)
 
 This repository contains all the stuff needed to run LI-COR Image Studio Lite v. 5.2 on Windows. Simply:
 
