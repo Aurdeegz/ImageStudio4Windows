@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Panels">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Lookup Table Values (LUTs)</title>
+        <link href="Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../Image_Studio.htm#Lookup_Table_Values_(LUTs).htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Panels</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Display</span>
+            </div>
+            <h1><a name="kanchor148"></a>Display</h1>
+            <p>The Display panel allows you to edit the parameters 
+ that display the selected image in the image view. The Display panel has individual 
+ sections for each channel available on a given acquisition. This example 
+ shows the 700 channel in red and the 800 channel in green.</p>
+            <h2><a name="kanchor149"></a><a name="kanchor150"></a>Features</h2>
+            <p>Click the <span class="SnippetFont">Features</span> at the top left corner of the <span class="SnippetFont">Display</span> panel to toggle between displaying and hiding all features on the image. Features include Bands, Lanes, Wells, Spots, Annotations, and more. Select specific features to display or hide on the <span class="SnippetFont">Show</span> group in each <span class="SnippetFont">Analysis</span> tab.  </p>
+            <h2><a name="kanchor151"></a>Brightness and <a name="kanchor152"></a>Contrast</h2>
+            <p>You can adjust the display with the <span class="SnippetFont">Brightness</span> and <span class="SnippetFont">Contrast</span> sliders. Drag a slider to adjust the display.</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/image181.gif"><img class="MCPopupThumbnail img imgwidth013pct" data-mc-width="301" data-mc-height="394" src="Images/image181_thumb_0_100.png" tabindex="" /></a>
+            </p>
+            <p>You can also adjust the display using curves on a histogram. Click <span class="SnippetFont">Curves</span> on the top of the <span class="SnippetFont">Display</span> panel to open the <span class="SnippetFont">Curves</span> tab.</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> You can also click the arrow (<b>&gt;</b>) in the <span class="SnippetFont">Display</span> group on the <span class="SnippetFont">Image</span> tab to open a dialog and choose <span class="SnippetFont">Curves</span> to view the Curves for this image. Select <span class="snippetFont">Brightness/Contrast</span> to view the Brightness and Contrast sliders again.</p>
+            <h2><a name="kanchor153"></a>Curves</h2>
+            <p>The x-axis 
+ of each panel represents the raw pixel values. Each panel has a bar graph displaying a histogram of number of pixels with each raw value. The higher the bar at a given location on the x-axis, the more pixels that contain that particular intensity value. This histogram is shaded with the color map in use for that channel. Also shown in each panel is an adjustable curve that maps raw data to displayed data.</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/image21.gif"><img class="MCPopupThumbnail img imgwidth013pct" data-mc-width="381" data-mc-height="400" src="Images/image21_thumb_0_100.png" tabindex="" /></a>
+            </p>
+            <p>The adjustable curve overlaying each histogram represents how the raw data maps to the displayed data. Adjust any of the three dots on the line (Max, Min, or K Value) to optimize the displayed image.To view the numbers hover the mouse over one of the three dots in the line. The Max and Min numbers are displayed. The middle one also shows the K value, which is used to smoothly change between linear (K=0) and logarithmic (K=1) mappings of the data onto the color maps.</p>
+            <ul>
+                <li value="1">Moving the <a name="kanchor154"></a>Max Point to the left is similar to increasing the Contrast value in the Odyssey software. As more of the intensity values are mapped to the brightest display values, the bands become brighter. </li>
+                <li value="2">Moving the <a name="kanchor155"></a>Min Point to the right shades more of the lower intensity values to lower display values, creating a visually cleaner background. </li>
+                <li value="3">Increasing the <a name="kanchor156"></a>K value reduces the contrast between the higher and lower intensity values, so less intense bands appear brighter while very bright bands are avoided.</li>
+            </ul>
+            <h2><a name="kanchor157"></a>Adjusting the Parameters</h2>
+            <p>You can adjust each channel’s display parameters independently.</p>
+            <ul style="list-style: disc;" type="disc">
+                <li class="p" value="1">
+                    <img src="Images/channelbutton.gif" style="width: 55px;height: 22px;" width="55" height="22" border="0" class="noThumb" /> 
+ Use the Channel label to cycle through channel 
+ views. Press once to show the single channel. Press again to show the 
+ other channels.&#160;</li>
+                <li class="p" value="2">&#160;<img src="Images/image25.gif" style="width: 16px;height: 16px;" width="16" height="16" border="0" class="noThumb" /> Use the disable button to disable (gray 
+ out) the channel. This is necessary when you are adding shapes.&#160;</li>
+                <li class="p" value="3">&#160;<img src="Images/image26.gif" style="width: 16px;height: 16px;" width="16" height="16" border="0" class="noThumb" /> <img src="Images/image27.gif" style="width: 16px;height: 16px;" width="16" height="16" border="0" class="noThumb" /> <img src="Images/image28.gif" style="width: 16px;height: 16px;" width="16" height="16" border="0" class="noThumb" /> <img src="Images/image29.gif" style="width: 16px;height: 16px;" width="16" height="16" border="0" class="noThumb" /> Use the color buttons 
+ to change the channel’s display color.&#160;</li>
+                <li class="p" value="4">
+                    <img src="Images/image30.gif" style="width: 16px;height: 16px;" width="16" height="16" border="1" class="noThumb" /> <img src="Images/image31.gif" style="width: 16px;height: 16px;" width="16" height="16" border="1" class="noThumb" /> Use 
+ the gray scale buttons to display the channel in gray scale. This is useful 
+ for displaying the image for reports that will be published.&#160;</li>
+                <li class="p" value="5">
+                    <img src="Images/ZoomIn.gif" width="32px" height="32px" border="0" class="noThumb" />
+                    <img src="Images/ZoomOut.gif" width="32px" height="32px" border="0" class="noThumb" /> Use 
+ the zoom buttons to zoom in on the range of pixel values for the channel.</li>
+                <li class="p" value="6">
+                    <img src="Images/image34.gif" style="width: 16px;height: 16px;" width="16" height="16" border="1" class="noThumb" /> 
+ Use the expand button to show the full histogram 
+ in full zoomed out view. Use the zoom in button to zoom back incrementally 
+ or the automatic button to zoom in all the way.&#160;</li>
+                <li class="p" value="7">
+                    <img src="Images/choosebutton.gif" class="noThumb" /> Use the <a name="kanchor158"></a><b>Choose Display</b> button to select the best display from six choices. See <a href="Choose_Display.htm">Choose Display</a> for more information.</li>
+                <li class="p" value="8">
+                    <img src="Images/wizardbutton.gif" class="noThumb" /> Use the <a name="kanchor159"></a><b>Adjust Display</b> button to open a dialog to help you set the min and max points of the display mapping. See <a href="Adjust_Display.htm">Adjust Display</a> for more information.</li>
+            </ul>
+            <p><span class="snippetFont">NOTE:</span> The <span class="snippetFont">Choose Display</span> and <span class="snippetFont">Adjust Display</span> dialogs automatically open after a scan for each channel acquired. Click the arrow (<b>&gt;</b>) in the <span class="SnippetFont">Display</span> group to open the <span class="SnippetFont">Display Options</span> dialog and remove the check marks to disable this feature.</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/autodisplay.gif"><img class="MCPopupThumbnail img imgwidth013pctNoBorder" data-mc-width="348" data-mc-height="254" src="Images/autodisplay_thumb_0_100.png" tabindex="" /></a>
+            </p>
+            <h3><a name="kanchor160"></a>Link Image Display Values</h3>
+            <p>Click Link at the top of the Display panel to force all images currently in the filtered Images Table to have 
+ the same Image Display values as those applied to the display of the selected image. 
+ When the Image Display values are linked, any changes that you make to the 
+ Curves or Brightness/Contrast sliders affect all the images in the filtered view regardless of the image 
+ view mode (single image or multi-image mode).</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> The <span class="SnippetFont">Link</span> button is only enabled 
+ after a filter has been defined and applied to the <span class="SnippetFont">Images Table</span>. It is unavailable if no filter has been applied.</p>
+            <p>The Image Display values will differ depending on the instrument and acquisition settings used. Linking the Image Display values of images from different instruments, or from the same instrument with different acquisition settings, will not provide accurate comparisons.</p>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

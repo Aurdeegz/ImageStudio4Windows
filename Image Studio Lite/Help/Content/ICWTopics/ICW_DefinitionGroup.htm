@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Analysis Types|In-Cell Western">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Definition Group</title>
+        <link href="../Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="../Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../Image_Studio.htm#ICWTopics/ICW_DefinitionGroup.htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Analysis Types</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">In-Cell Western</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Definition Group</span>
+            </div>
+            <h2>Definition Group</h2>
+            <p>Define the ICW&#160;Analysis with the controls in this group. </p>
+            <p>The first button toggles between <span class="snippetFont">None</span>, <span class="snippetFont">700</span>, and <span class="snippetFont">800</span>. </p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/image168.gif"><img class="MCPopupThumbnail img imgwidth013pct" data-mc-width="506" data-mc-height="203" src="../Images/image168_thumb_0_100.png" tabindex="" /></a>
+            </p>
+            <p>Use the first button to select the channel used to normalize the results. The normalization channel often detects the total amount of protein while the other channel detects the protein of interest (e.g., phosphorylated protein). In this example, the amount of phosphorylated protein in the other channel is adjusted by the total amount of protein detected in the normalization channel. This method accounts for variation in protein amount per well, resulting in better data. </p>
+            <h3><a name="Well"></a>Well Types</h3>
+            <p>Click the <span class="snippetFont">Well Types</span> button to open the <span class="snippetFont">Well Types</span> dialog and assign each well as either <span class="snippetFont">Sample</span>, <span class="snippetFont">100% Std</span>, <span class="snippetFont">Background</span>, or <span class="snippetFont">None</span>. </p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/IS5.0-ICWWellTypes-dialog.png" data-mc-popup-alt="Image Studio 5.0 In-Cell Western Well Types dialog"><img class="MCPopupThumbnail img imgwidth025pctNoBorder" data-mc-width="745" data-mc-height="742" src="../Resources/Images/IS5.0-ICWWellTypes-dialog_thumb_0_100.png" alt="Image Studio 5.0 In-Cell Western Well Types dialog" tabindex="" /></a>
+            </p>
+            <ol>
+                <li value="1">Select the type of well to mark by clicking the name in the Well Legend. </li>
+                <li value="2">Click the well to assign the selected well type to that well. </li>
+                <li value="3">
+                    <p class="inList">Make multiple well assignments by dragging through the desired wells.</p>
+                    <p class="noteInList"><span class="snippetFont">NOTE:</span> If more than one <span class="snippetFont">Background</span> well is designated, all <span class="snippetFont">Background</span> wells will be averaged for the ICW calculations. The same is true for <span class="snippetFont">100% Std</span> wells. </p>
+                </li>
+            </ol>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />ICW calculation explanation...</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p><b>Background</b> — The average pixel intensity of each background well will be calculated, and the background wells will be averaged to find the background value to be subtracted from wells designated <span class="snippetFont">Sample</span> and <span class="SnippetFont">100% Standard</span>.</p>
+                    <p><b>Linked Wells</b> — The pixel intensities from linked wells are averaged, and this average is used in the following calculations for each of the linked wells. </p>
+                    <p><span class="SnippetFont">ICW Relative</span> — After background subtraction, all wells designated as Sample or 100% Standard in a channel are divided by the intensity value of the well with the highest response. This well is given a value of 1.0, and the relative intensity values of the other wells will generally be between 0.0 and 1.0.</p>
+                    <p class="note"><span class="snippetFont">NOTE:</span> Negative relative intensities indicate the original intensity value was lower than the average background when the background was subtracted. </p>
+                    <p>If a normalization channel is selected, the intensity value of each well in the other channel is divided by the relative intensity value of the corresponding well in the normalization channel. </p>
+                    <p><b>ICW&#160;% Response</b> — After background subtraction and normalization (if used), all wells designated as Sample are divided by the average of the wells designated as 100% Standard in that channel and multiplied by 100 to give a percentage response to the control in the 100% Standard.</p>
+                    <p class="note"><span class="snippetFont">NOTE:</span> All <b>ICW % Response</b> values for the normalization channel are reported as NaN. </p>
+                    <p><b>ICW Std Dev</b> — The ICW&#160;standard deviation is the standard deviation of the average of the pixel intensities from linked wells. </p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Z-Factor Analysis...</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>First, pixel intensities in all wells designated as Background in each channel   are averaged, and the average is subtracted from the pixel intensities of all wells in that channel. Then, the relative intensity values are found by dividing all wells by the intensity value of the well with the highest response. The intensity values from the sample channel are divided by the relative intensity values from the corresponding wells in the normalization channel. </p>
+                    <p>The Z-factor calculation uses these values in the following equation:</p>
+                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/image176.gif"><img class="MCPopupThumbnail img" data-mc-width="446" data-mc-height="539" src="../Images/image176_thumb_0_100.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" tabindex="" /></a>
+                    </p>
+                </div>
+            </div>
+            <h3>Linked Wells</h3>
+            <p>Click the <span class="snippetFont">Linked Wells</span> button to open the <b>Well Links</b> dialog. Select multiple rows or columns containing identical samples to average the response of these samples.</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/IS5.0-ICWWellLinks-dialog.png" data-mc-popup-alt="Image Studio 5.0 In-Cell Western Analysis Well Links dialog"><img class="MCPopupThumbnail img imgwidth025pctNoBorder" data-mc-width="745" data-mc-height="780" src="../Resources/Images/IS5.0-ICWWellLinks-dialog_thumb_0_100.png" alt="Image Studio 5.0 In-Cell Western Analysis Well Links dialog" tabindex="" /></a>
+            </p>
+            <p> For example, if rows A and B are identically loaded, link the rows and the response from each pair of wells will be averaged.</p>
+            <ol>
+                <li value="1">Drag through the rows to select them. They will be highlighted green. </li>
+                <li value="2">Select <span class="SnippetFont">Link rows</span>.</li>
+                <li value="3">Click <span class="snippetFont">Create Link</span>. The linked rows will be black. </li>
+            </ol>
+            <p>Each individual link (A01-B01, A02-B02, etc.) is listed in the <span class="snippetFont">Existing Links</span> list. The analysis will average the linked wells in the <span class="snippetFont">Existing Links</span> list and the averaged values will be used in ICW calculations rather than individual response values. </p>
+            <p>Individual wells can also be linked. </p>
+            <ol>
+                <li value="1">Click individual wells to select them. Selected wells are highlighted green.</li>
+                <li value="2">Select <span class="SnippetFont">Independent links</span>, and click <span class="snippetFont">Create Link</span>. </li>
+            </ol>
+            <p>To dissolve a link, select the wells and click <span class="snippetFont">Unselect</span> to change the well type from linked (green) to unlinked (white). Links can also be dissolved by clicking <span class="snippetFont">Remove All</span> to remove all current row links, or selecting links in the link list and clicking <span class="snippetFont">Remove Selected</span>. <span class="snippetFont">Shift+Click</span> and <span class="snippetFont">Ctrl+Click</span> are available for multiple selections. </p>
+            <h3>Advanced ICW Definition</h3>
+            <ol>
+                <li value="1">For more options, click the arrow at the 
+ bottom right of the <span class="snippetFont">Definition</span> group.</li>
+                <p class="inList"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Images/image164.gif"><img class="MCPopupThumbnail img imgwidth013pct" data-mc-width="774" data-mc-height="235" src="../Images/image164_thumb_0_100.png" tabindex="" /></a>
+                </p>
+                <li value="2">This opens the <span class="snippetFont">Expanded ICW Definition</span> dialog.</li>
+                <p class="inList"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Images/IS5.0-ExpandedICWDefinitions-dialog.png" data-mc-popup-alt="Image Studio 5.0 Expanded ICW Definition dialog"><img class="MCPopupThumbnail img imgwidth013pctNoBorder" data-mc-width="207" data-mc-height="341" src="../Resources/Images/IS5.0-ExpandedICWDefinitions-dialog_thumb_0_100.png" alt="Image Studio 5.0 Expanded ICW Definition dialog" tabindex="" /></a>
+                </p>
+                <li class="nb">Rows or columns can be analyzed individually. Only the background and 100% Standard well(s) in that row or column will be used in the analysis. </li>
+                <li value="3">Select the channels for the ICW analysis. </li>
+                <li value="4">Select the column to use in the ICW analysis for the response value, such as <span class="snippetFont">Total</span>. </li>
+            </ol>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('../Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} [%t] %-5p %c %x -%m%n"/>
+		</layout>
+	</appender>
+	<appender name="easf" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="100KB"/>
+		<param name="maxBackupIndex" value="5"/>
+		<param name="file" value="${log.file}Logs/ImageStudio.log"/>
+		<param name="threshold" value="debug"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} [%t] %-5p %c %x -%m%n"/>
+		</layout>
+	</appender>
+
+	<logger name="easf">
+		<level value="warn"></level>
+		<appender-ref ref="easf"></appender-ref>
+		<appender-ref ref="stdout"></appender-ref>
+	</logger>
+	<root>
+		<level value="debug"></level>
+	</root>
+</log4j:configuration>

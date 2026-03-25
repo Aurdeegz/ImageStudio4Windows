@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Reference">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Lane Method vs. Rolling Ball from ImageJ</title>
+        <link href="../Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="../Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../Image_Studio.htm#Background/LaneVsImageJRollingBall.htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Reference</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Lane Method vs. Rolling Ball</span>
+            </div>
+            <h1>Lane Method vs. Rolling Ball from ImageJ</h1>
+            <p>The <span class="SnippetFont">Image Studio Lane</span> background subtraction method and ImageJ Rolling ball method use very different algorithms to subtract background from a <i>lane</i>. Rolling ball can also be used to subtract background from an <i>entire image</i>, although this is discouraged.<sup>*</sup></p>
+            <p class="lilCite"><sup>*</sup>Gassman, M, B Grenacher, B Rohde, and J Vogel. <i>Electrophoresis</i> 30:1845-55 (2009).</p>
+            <p class="lilCiteBottom"><a href="http://www.ncbi.nlm.nih.gov/pubmed/19517440"><span class="hyperLink">http://www.ncbi.nlm.nih.gov/pubmed/19517440</span></a>
+            </p>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Lane Background (Image Studio Software)</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>To begin the <span class="SnippetFont">Image Studio Lane</span> background subtraction algorithm, the average pixel intensity of each row of pixels in a lane is calculated to establish a "lane profile". The lane profile is used to find areas of minimum pixel intensity between shapes, called "local minima".  The image below shows a lane with its corresponding lane profile. </p>
+                    <p>
+                        <img src="../Resources/Images/LaneProfileExample.png" class="width050BorderNoThumb" data-mc-conditions="Default.WebHelp" />
+                    </p>
+                    <p>To subtract background, a linear connection is drawn between consecutive local minima and background noise that falls beneath the lines is subtracted.</p>
+                    <p style="clear:both;">The <span class="SnippetFont">Lane</span> background method takes advantage of the known locations of shapes within a lane and selectively connects minima in the profile to account for variations in shape size, shape spacing, and image resolution.  The image below shows a lane profile before and after <span class="SnippetFont">Lane</span> was used to subtract background.</p>
+                    <p style="clear: both;" data-mc-conditions="Default.WebHelp">
+                        <img src="../Resources/Images/LaneProfileNoBgSubtracted.png" class="width100pctNoThumb" />
+                    </p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Rolling Ball (ImageJ)</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>To understand Rolling ball, imagine an image of a Western blot as a 3-dimensional histogram of pixel intensity<MadCap:conditionalText data-mc-conditions="Default.WebHelp">(see image below)</MadCap:conditionalText>. Shapes, areas of high pixel intensity, will be peaks on the histogram.</p>
+                    <p data-mc-conditions="Default.WebHelp">
+                        <img src="../Resources/Images/OpticalDensityHistogramColored-withBlot.png" class="width075BorderNoThumb" />
+                    </p>
+                    <p style="clear:both;">Rolling ball identifies background in an image by traversing a ball along the bottom surface of the pixel intensity histogram. The highest point where the ball can fit underneath the surface is considered the threshold for background subtraction at that point <MadCap:conditionalText data-mc-conditions="Default.WebHelp">(see image below)</MadCap:conditionalText>.</p>
+                    <p style="clear: both;" data-mc-conditions="Default.WebHelp">
+                        <img src="../Resources/Images/UpsideDownWesternSurface-3balls-laneOverlap-greyBg.png" class="width075BorderNoThumb" />
+                    </p>
+                    <p style="clear: both;">When Rolling ball is applied to a lane, a background curve is determined by traversing the ball beneath a lane profile representing the average pixel intensity across each row of pixels in a lane <MadCap:conditionalText data-mc-conditions="Default.WebHelp">(see image below)</MadCap:conditionalText>.</p>
+                    <p style="clear: both;" data-mc-conditions="Default.WebHelp">
+                        <img src="../Resources/Images/LaneAnlyzdRollBall.png" class="width075BorderNoThumb" />
+                    </p>
+                    <!--
+		<div class="dFloLef_12ptPadTopLefBot">
+            <img src="Resources/Images/UpsideDownWesternSurface.tif" class="width050pct" />
+        </div>
+		-->
+                    <p>Whether Rolling ball is applied to an entire image or a lane, an appropriate radius must be chosen for accurate results. The correct radius is dependent on many factors: image resolution, shape width, shape separation, and shape overlap. When choosing a radius, a quick rule of thumb is to make the radius the same size as the largest feature in the image or lane that is not part of the background. </p>
+                    <p>However, many factors that affect Rolling ball's accuracy are likely to vary throughout an image, so applying Rolling ball to an entire image is discouraged. Even within a lane, shapes that vary widely in size and shapes that overlap can decrease Rolling ball's accuracy.</p>
+                    <p>When deciding if Rolling ball is appropriate for a particular image, consider the description of Rolling ball from the ImageJ documentation:</p>
+                    <p class="quoteBox">"Removes smooth continuous backgrounds from gels and other images"</p>
+                    <p class="citeQuoteBox">- ImageJ User Guide | <a href="http://rsbweb.nih.gov/ij/docs/guide/146-29.html"><span class="hyperLink">29.14 Subtract Background…</span> (acc. 10/28/14)</a></p>
+                    <p>If the background does not appear smooth and continuous, another approach may be necessary.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Lane Background and Rolling Ball Compared</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>The two primary differences between Rolling ball and <span class="SnippetFont">Image Studio Lane</span> background are:</p>
+                    <ol>
+                        <li value="1">Rolling ball requires a user to choose a radius for a ball that will be applied to individual lanes or to the entire image. <span class="SnippetFont">Lane</span> does not require user input to accurately subtract background.</li>
+                        <li value="2">Rolling ball can be applied to an entire image or a lane. <span class="SnippetFont">Lane</span> background is applied only to a lane.</li>
+                    </ol>
+                    <p class="note"><span class="snippetFont">NOTE:</span> When Rolling ball is used to subtract background from an entire image, the image will visibly change. Background subtraction does not change the image's appearance in Image Studio Software, but background correction is still occurring (as long as <span class="snippetFont">None</span> is not chosen).</p>
+                    <p>Rolling ball can be effective for subtracting background from images that have smooth and continuous backgrounds. However, it is difficult to accurately subtract background using Rolling ball for lanes and images that have closely-spaced shapes or shapes with widely variable sizes.</p>
+                    <p>For example,<MadCap:conditionalText data-mc-conditions="Default.WebHelp"> the image below</MadCap:conditionalText> depicts a common scenario where Rolling ball will overestimate the background value. Although the chosen ball radius might be appropriate for all the shapes in a lane, the ball will fit too far inside the double peak created by the two closely spaced shapes. Therefore, Rolling ball will overestimate the background threshold (represented by the red line).</p>
+                    <p>By contrast, the <span class="SnippetFont">Lane</span> background method will trace a background threshold beneath the double peaks. <span class="SnippetFont">Lane</span> background does not use the local minimum between shapes B02 and B03 to create the background trace, because the algorithm avoids creating steep lines that would cut into a signal peak.</p>
+                    <p data-mc-conditions="Default.WebHelp">
+                        <img src="../Resources/Images/ExampleLane3Bands.png" class="width050BorderNoThumb" />
+                    </p>
+                </div>
+            </div>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('../Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

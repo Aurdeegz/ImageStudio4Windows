@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  version="2.0">
+	<channel>
+		<title>LI-COR Image Studio News</title>
+		<description>Here's the latest news for the Image Studio user.</description>
+		<link>http://www.licor.com/bio/products/software/image_studio/</link>
+		<lastBuildDate>Thu, 01 Aug 2013 09:16:15 -0500</lastBuildDate>
+		
+		<item>
+			<title>Image Studio RSS Feed</title>
+			<description>This Image Studio RSS feed periodically updates you with important updates and tips from LI-COR. You must be connected to the Internet to access this feature, and it looks like you are not currently connected. Connect to the Internet now to receive these important updates.</description>
+			<guid>http://www.licor.com/bio/InstalledRssFeed.xml</guid>
+			<pubDate>Thu, 01 Aug 2013 09:16:15 -0500</pubDate>
+		</item>
+
+	</channel>
+</rss>

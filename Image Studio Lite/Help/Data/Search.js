@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0,74],s:['+','found','see'],p:[['+',56],['and',21],['bands',64],['click',17],['dialog',75],['flip',32],['image',59],['lanes',46],['none',92],['per',8],['scanned',22],['studio',14],['the',81],['upper',58],['®',12]]});

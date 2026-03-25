@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Panels">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Concentration</title>
+        <link href="Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../Image_Studio.htm#Concentration.htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Panels</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Concentration</span>
+            </div>
+            <h1>Concentration</h1>
+            <p>Use this option to assign features as concentration standards that will be used to calculate unknown concentrations of other features.</p>
+            <p>A relationship between concentration standards (added to a table) and a measured quantification value (chosen in the <span class="SnippetFont">Concentration</span> panel) will be determined and used to assess unknown concentrations.</p>
+            <p>To assign concentration standards and determine unknown concentrations:</p>
+            <ol>
+                <li value="1">
+                    <p class="inList">Click the <span class="SnippetFont">Concentration</span> tab at the right side of the window to display the <span class="SnippetFont">Concentration</span> panel. <a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="Images/image171.gif"><img class="MCPopupThumbnail img imghoverToExpandThumbnail" data-mc-width="389" data-mc-height="280" src="Images/image171_thumb_0_36.png" tabindex="" /></a></p>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Choose the desired interpolation method, quantification value, and channel in the Concentration panel...</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <ul style="list-style-type: square;">
+                                <li value="1">
+                                    <p class="inList"><span class="SnippetFont">Interpolation Method</span> list - Choose the interpolation type used to calculate a relationship between the concentration standard values you enter and the measured signal.</p>
+                                    <p class="inList"><span class="SnippetFont">Linear</span> - A linear relationship, y = mx + b, will be determined between the entered concentration standards and the quantification value chosen in the <span class="SnippetFont">Column</span> list, then used to calculate unknown concentrations.</p>
+                                    <p class="inList"><span class="SnippetFont">Log</span> - A logarithmic relationship, y = ln(x), will be determined between the entered concentration standards and the quantification value chosen in the <span class="SnippetFont">Column</span> list, then used to calculate unknown concentrations.</p>
+                                    <p class="inList"><span class="SnippetFont">Reciprocal fit</span> - An inverse relationship, y = 1/x, will be determined between the entered concentration standards and the quantification value chosen in the <span class="SnippetFont">Column</span> list, then used to calculate unknown concentrations.</p>
+                                    <p class="inList"><span class="SnippetFont">Exponential</span> - An exponential relationship, y = x^n, will be determined between the entered concentration standards and the quantification value chosen in the <span class="SnippetFont">Column</span> list, then used to calculate unknown concentrations.</p>
+                                </li>
+                                <li value="2"><span class="SnippetFont">Column</span> - Choose the quantification value that Image Studio Software will use to determine the relationship between entered concentration standards and measured signal. <a href="Calculation_Descriptions.htm" class="See_HypLinkTopic MCXref xref xrefSee_HypLinkTopic"><span style="color: Black;" class="mcFormatColor">See</span> <span style="color: Blue;" class="mcFormatColor"><u>Calculation Descriptions</u></span></a> for more detail about each quantification value. This value will appear in the <span class="SnippetFont">Chart</span> panel table next to the concentration standard values.</li>
+                                <li value="3"><span class="snippetFont">Channel</span> - Choose the channel that contains the concentration standards you would like to appear in the <span class="SnippetFont">Chart</span> panel table next to the concentration value.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li value="2">
+                    <p class="inList">Click the tab at the top of the Table section to open the table with the features to be assigned as Concentration Standards. In the example below, the <span class="SnippetFont">Plate Wells</span> table is selected.</p>
+                    <p class="inList"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/image174.gif"><img class="MCPopupThumbnail img imgwidth025pct" data-mc-width="787" data-mc-height="126" src="Images/image174_thumb_0_100.png" tabindex="" /></a>
+                    </p>
+                </li>
+                <li value="3">
+                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Closed" data-mc-alt2="Open" />Add the Conc. Std. and Concentration columns to the table...</a></span>
+                        <div class="MCDropDownBody dropDownBody">
+                            <ol style="list-style-type: lower-alpha;">
+                                <li value="1">Click <span class="snippetFont">Columns</span><img src="Resources/Images/ReviewExpress.gif" class="inLineIcon24by24" /> at the top right of the Table section to open the <span class="snippetFont">Columns</span> dialog.</li>
+                                <li value="2">
+                                    <p class="inList">Check the boxes next to <span class="snippetFont">Conc. Std.</span> and <span class="SnippetFont">Concentration</span>.</p>
+                                    <p class="inList">
+                                        <img src="Images/image173.gif" class="noThumb" />
+                                    </p>
+                                </li>
+                                <li value="3">
+                                    <p class="inList">Click <span class="snippetFont">Save</span>.</p>
+                                    <p class="inList">The <span class="snippetFont">Conc. Std.</span> and <span class="SnippetFont">Concentration</span> columns will be added to the far right of the table.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li value="4">Click a concentration standard feature or select its row in the table.</li>
+                <p class="noteInList"><span class="snippetFont">NOTE:</span> Concentration standards can only be added to one channel at a time. Check that the highlighted row is in the correct channel. </p>
+                <li value="5">
+                    <p class="inList">Double click the <span class="snippetFont">Conc. Std.</span> field in the selected row.</p>
+                </li>
+                <li value="6">
+                    <p class="inList">Enter the concentration value for this feature.</p>
+                    <p class="inList">The assigned concentration standard will appear in the <span class="SnippetFont">Concentration</span> panel table.</p>
+                    <p class="noteInList"><span class="snippetFont">NOTE:</span> Ensure the values of the entered standards increase or decrease consistently with the quantification value chosen in the <span class="SnippetFont">Concentration</span> panel. </p>
+                </li>
+                <li value="7">Repeat steps 4 through 6 to add all of the concentration standards to the list.</li>
+                <li value="8">The calculated concentrations for the other features appear in the table in the Concentration column.</li>
+            </ol>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

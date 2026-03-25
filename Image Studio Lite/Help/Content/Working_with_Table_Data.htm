@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Tables">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Working with Table Data</title>
+        <link href="Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../Image_Studio.htm#Working_with_Table_Data.htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Tables</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Working with Table Data</span>
+            </div>
+            <h1><a name="kanchor165"></a>Working with Table Data</h1>
+            <p>The top right of the Table section has commands to <span class="snippetFont">Filter</span> the Table, <span class="SnippetFont">Report</span> table information, and choose <span class="snippetFont">Columns</span> to display in the table. You can also <span class="SnippetFont">Copy</span> selected rows from the table onto the clipboard for pasting into other programs and <span class="snippetFont">Paste</span> the contents of the clipboard into the table. </p>
+            <p>
+                <img src="Images/image204.gif" class="noThumb" />
+            </p>
+            <h2>Copy</h2>
+            <p>The <span class="SnippetFont">Copy</span> button copies to the 
+ clipboard the selected rows of the table view in the current order. If 
+ you want all visible rows from the table, <span class="SnippetFont">Ctrl-A</span> 
+ will select them all, or click the <span class="SnippetFont">Select All</span> button <img src="Images/image93.gif" style="width: 17px;height: 17px;" width="17" height="17" border="0" class="noThumb" /> in the upper left corner of the table . Column headings are included.</p>
+            <ol style="list-style: decimal;list-style-type: decimal;">
+                <li class="p" value="1">Click the tab on the left top of the Table section to select the Table you want to work with.</li>
+                <li class="p" value="2">Select one or more rows in the table. (Press <span class="SnippetFont">Ctrl-A</span> 
+ to select them all, including the column headings, or click <span class="SnippetFont">Select All</span> <img src="Images/image93.gif" class="noThumb" /> in the upper left corner of the table.)</li>
+                <li class="p" value="3">Click <span class="SnippetFont">Copy</span> or press <span class="SnippetFont">CTRL+C</span> on your keyboard. This copies the selection to the clipboard. You can now  paste the rows with the column headings in another program.</li>
+            </ol>
+            <h2>Paste</h2>
+            <p>The <span class="snippetFont">Paste</span> button pastes data from the clipboard down a table column  starting at the current selection.</p>
+            <ol>
+                <li value="1">In the selected table, select any editable row or column.</li>
+                <li value="2">Click <span class="snippetFont">Paste</span> or press <span class="snippetFont">CTRL-V</span> on your keyboard. This adds the rows from the clipboard in the selected column beginning with the selected row. Each entry in the paste buffer fills one row in the table view. Rows are filled starting with the selected row down one row per entry until reaching the last row in the table view.</li>
+            </ol>
+            <ul style="list-style: disc;" type="disc">
+                <li class="p" value="1">If there are fewer entries in the paste buffer than remaining rows in the table view, all the entries in the paste buffer are used, but all the rows may not be filled with new entries.</li>
+                <li class="p" value="2">If there are more entries in the paste buffer than remaining rows in the table view, the new entries are pasted into the selected column beginning at the selected row with a new entry in each subsequent row until the end of the table view is reached. A warning message displays stating that some entries in the paste buffer are discarded.</li>
+            </ul>
+            <p>When the paste with multiple entries in the clipboard function is used on tables outside of the <span class="SnippetFont">Images Table</span> on an <span class="SnippetFont">Images Table</span> column, all rows of this column will be the same. All values in this column will have the value of the last row filled in with this paste operation. This is because only one value is applied to this column of the <span class="SnippetFont">Images Table</span> for a given Image ID. Since the non-image table is only of one Image ID, all rows of any <span class="SnippetFont">Images Table</span> column are the same.</p>
+            <h2><a name="kanchor166"></a>Launch Spreadsheet</h2>
+            <p>To export data to a spreadsheet:</p>
+            <ol>
+                <li value="1">Select the rows that you want to export to a spreadsheet.</li>
+                <li value="2">Click <span class="SnippetFont">Report</span> in the upper right corner of the Table section and select <span class="SnippetFont">Launch Spreadsheet</span> from the list to create a (*.xls) file containing the selected rows of the table view in the current order.</li>
+                <p class="inList">
+                    <img src="Images/image203.gif" class="noThumb" />
+                </p>
+                <li class="p" value="3">If you have Excel on your computer, or another spreadsheet program that can open .xls files, the program is launched. First you will be prompted for a name. You can accept the default, or change the name and location. The program then opens.</li>
+            </ol>
+            <p class="note"><span class="snippetFont">NOTE:</span> If you do not have an <a name="kanchor167"></a>Excel or compatible program installed, you will get a message that an application to read Excel files must be installed before using this feature. You must also set the file association to open the application for files with the .xls extension (this is done in the <i>Windows Control Panel –&gt; Default Programs –&gt;Set Associations dialog</i>).</p>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

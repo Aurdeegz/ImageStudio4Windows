@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Reference">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Calculation Descriptions</title>
+        <link href="Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../Image_Studio.htm#Calculation_Descriptions.htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Reference</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Calculation Descriptions</span>
+            </div>
+            <h1><a name="kanchor217"></a>Calculation Descriptions</h1>
+            <p>In the Tables there are columns that refer to calculations. When these columns are part of the table, the values are automatically calculated and reported in the table. Some columns are specific to one table and some can be shared across 
+ tables. The <span class="SnippetFont">Columns</span> group has commands 
+ for adding and removing columns. For further instructions, select "Adding and Removing Columns" in the help section of any table type. </p>
+            <p>Below are  detailed descriptions of the calculations in these columns. First, the terms used in these descriptions are defined.</p>
+            <h2>Definitions of Terms</h2>
+            <p><span class="SnippetFont">Shape </span>— any area enclosed using the shape tools.</p>
+            <p><span class="SnippetFont">Pixel </span>— the smallest area unit of an image that is measured with a single intensity value.</p>
+            <p><span class="SnippetFont">Signal intensity </span>or<span class="SnippetFont"> intensity</span> — signal counts measured in a single pixel per unit time.</p>
+            <h2>Descriptions of the Calculations</h2>
+            <p><span class="SnippetFont"><a name="kanchor218"></a>Area</span> — The area is the total number of pixels enclosed by a shape.</p>
+            <p><span class="SnippetFont"><a name="kanchor219"></a>Bkgnd. </span>— The background is the average intensity of the pixels selected as the background region.</p>
+            <p><span class="SnippetFont"><a name="kanchor220"></a>Bkgnd. Std Dev </span>— The background standard deviation is the standard deviation of all of the background pixel intensities in a single channel.</p>
+            <p><span class="SnippetFont"><a name="kanchor221"></a>Max </span>— The maximum intensity is the highest pixel intensity within a shape. The maximum intensity value does not have background intensity subtracted. </p>
+            <p><a name="kanchor222"></a><span class="SnippetFont">Mean</span> — The mean is the sum of all of the pixel intensities for a shape divided by the total number of pixels in a shape.</p>
+            <p><span class="SnippetFont"><a name="kanchor223"></a>Min </span>— The minimum intensity is the lowest pixel intensity within a shape. The minimum intensity value does not have background intensity subtracted. </p>
+            <p><span class="SnippetFont"><a name="kanchor224"></a>Signal </span>— The signal is the sum of the individual pixel intensity values (<span class="snippetFont">Total</span>) for a shape minus the product of the average intensity values of the pixels in the background (<span class="snippetFont">Bkgnd</span>) and the total number of pixels enclosed by the shape (<span class="SnippetFont">Area</span>). <span class="SnippetFont">Signal = Total - (Bkgnd. x Area)</span></p>
+            <p><span class="SnippetFont"><a name="kanchor225"></a>StdDev</span> — The standard deviation of all of the pixel intensities for a shape.</p>
+            <p><span class="SnippetFont"><a name="kanchor226"></a>Total</span> — The total intensity is the sum of the individual pixel intensities for a shape.</p>
+            <p><span class="SnippetFont"><a name="kanchor227"></a>Trim Bkgnd.</span> — The trimmed background is the average intensity of the pixels selected as the background region.</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> The highest 5% count and lowest 5% count of the intensity pixel values of the shape are discarded.</p>
+            <p><span class="SnippetFont"><a name="kanchor228"></a>Trim Bkgnd. StdDev</span> — The trimmed background standard deviation is the standard deviation of all of the background pixel intensities in a single channel. <b>Note</b>: the highest 5% count and lowest 5% count of the intensity pixel values of the background are discarded.</p>
+            <p><b><a name="kanchor229"></a>Trim Mean</b> — The trimmed mean is the sum of all of the pixel intensities for a shape divided by the total number of pixels in a shape.</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> The highest 5% count and lowest 5% count of the intensity pixel values of the shape are discarded.</p>
+            <p><span class="SnippetFont"><a name="kanchor230"></a>Trim Signal</span> — The trimmed signal is the sum of the individual pixel intensity values  for a shape minus the product of the average intensity values of the pixels in the background (<b>Bkgnd.</b>) and the total number of pixels enclosed by the shape. <b>Note</b>: The highest 5% count and lowest 5% count are excluded from the intensity summation and the pixel count. </p>
+            <p><span class="SnippetFont"><a name="kanchor231"></a>Trim StdDev</span> — The trimmed standard deviation is the standard deviation of all of the pixel intensities for a shape.</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> The highest 5% count and lowest 5% count of the intensity pixel values of the shape are discarded.</p>
+            <h3>In-Cell Western Calculations</h3>
+            <p><b>Background</b> — The average pixel intensity of each background well will be calculated, and the background wells will be averaged to find the background value to be subtracted from wells designated <span class="snippetFont">Sample</span> and <span class="SnippetFont">100% Standard</span>.</p>
+            <p><b>Linked Wells</b> — The pixel intensities from linked wells are averaged, and this average is used in the following calculations for each of the linked wells. </p>
+            <p><span class="SnippetFont">ICW Relative</span> — After background subtraction, all wells designated as Sample or 100% Standard in a channel are divided by the intensity value of the well with the highest response. This well is given a value of 1.0, and the relative intensity values of the other wells will generally be between 0.0 and 1.0.</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> Negative relative intensities indicate the original intensity value was lower than the average background when the background was subtracted. </p>
+            <p>If a normalization channel is selected, the intensity value of each well in the other channel is divided by the relative intensity value of the corresponding well in the normalization channel. </p>
+            <p><b>ICW&#160;% Response</b> — After background subtraction and normalization (if used), all wells designated as Sample are divided by the average of the wells designated as 100% Standard in that channel and multiplied by 100 to give a percentage response to the control in the 100% Standard.</p>
+            <p class="note"><span class="snippetFont">NOTE:</span> All <b>ICW % Response</b> values for the normalization channel are reported as NaN. </p>
+            <p><b>ICW Std Dev</b> — The ICW&#160;standard deviation is the standard deviation of the average of the pixel intensities from linked wells. </p>
+            <h3>Z-Factor Calculation</h3>
+            <p>First, pixel intensities in all wells designated as Background in each channel   are averaged, and the average is subtracted from the pixel intensities of all wells in that channel. Then, the relative intensity values are found by dividing all wells by the intensity value of the well with the highest response. The intensity values from the sample channel are divided by the relative intensity values from the corresponding wells in the normalization channel. </p>
+            <p>The Z-factor calculation uses these values in the following equation:</p>
+            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="Images/image176.gif"><img class="MCPopupThumbnail img" data-mc-width="446" data-mc-height="539" src="Images/image176_thumb_0_100.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" tabindex="" /></a>
+            </p>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

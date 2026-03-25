@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Image_Studio.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="Analysis Types|Small Animal Analysis">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Auto Shape Group</title>
+        <link href="../Resources/Images/StateDiagram-21CFR11.svg" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Resources/TableStyles/footer.css" rel="stylesheet" />
+        <link href="../Stylesheets/HelpBio.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.imagemapster.min.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../Image_Studio.htm#SmallAnimals/SmallAnimal_AutoShapeGroup.htm">Open topic with navigation</a>
+        </p>
+        <div class="wrapper">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">Image Studio Help &gt; </span><span class="MCBreadcrumbsSelf">Analysis Types</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Small Animal Analysis</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Auto Shape Group</span>
+            </div>
+            <h1><a name="kanchor208"></a>Auto Shape Group</h1>
+            <p>The Auto Shape tool creates a shape automatically that encloses fluorescence from irregularly shaped tumors or organs in images of small animals. </p>
+            <ol style="list-style: decimal;list-style-type: decimal;">
+                <li value="1">Select one channel to be displayed and disable the other channel in the <span class="snippetFont">Display</span> tab on the right-hand side. </li>
+                <li value="2">After assigning a shape as background, click the <b>Define New</b> button to launch the Auto Shape tool.</li>
+                <li value="3">Click the center of an area of fluorescence to create an Auto Shape. </li>
+                <li value="4">Adjust the <span class="snippetFont">Std. Dev. Multiplier</span> and <span class="snippetFont">Search Limit</span> sliders in the <span class="SnippetFont">Auto Shape</span> group to interactively change the Auto Shape.</li>
+                <li class="nb">
+                    <img src="../Images/Sliders.jpg" class="noThumb" /> </li>
+            </ol>
+            <h3><a name="kanchor209"></a>Standard Deviation Multiplier</h3>
+            <p>The Standard Deviation Multiplier (<span class="snippetFont">Std. Dev. Multiplier</span>) is used in this equation to calculate the Threshold Value:</p>
+            <p>Threshold Value = User-Defined Background + (Background Standard Deviation x Standard Deviation Multiplier)</p>
+            <p>In general, increasing the <span class="snippetFont">Std. Dev. Multiplier</span> increases the threshold and reduces the size of the Auto Shape by excluding more pixels of lower intensity. Similarly, decreasing the <span class="snippetFont">Std. Dev. Multiplier</span> increases the size of the Auto Shape.</p>
+            <h3><a name="kanchor210"></a>Search Limit </h3>
+            <p>The <span class="snippetFont">Search Limit</span> controls the size of the image area that is searched to find a <a name="kanchor211"></a>region of interest. The area searched is a square centered on the mouse click such that the distance (pixels) from the center to the mid-point on any of the four line segments is equal to the <span class="snippetFont">Search Limit</span>.</p>
+            <p>Setting the <span class="snippetFont">Search Limit</span> to a smaller value can exclude unwanted fluorescence nearby, confining the Auto Shape to the region of interest. Setting the <span class="snippetFont">Search Limit</span> too low, however, could result in edges where the search area intersects the fluorescence in the region of interest. </p>
+            <p class="note"><span class="snippetFont">NOTE:</span> <span class="snippetFont">Search Limit</span>is measured in pixels, so images scanned at higher resolution (smaller distance between data points) require higher search limits to cover the same image area.</p>
+            <div class="push">
+            </div>
+        </div>
+        <div class="footer">
+            <table style="width: 100%;caption-side: top;mc-table-style: url('../Resources/TableStyles/footer.css');" class="TableStyle-footer" cellspacing="0">
+                <col class="TableStyle-footer-Column-Column1" />
+                <col class="TableStyle-footer-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-footer-Body-Body1" style="background-color: #0077c6;">
+                        <td class="TableStyle-footer-BodyB-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.560em;margin-top: 0.28em;">Product Information:</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Image Studio Software</p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">Help build date: <span class="SystemShortDate">7/20/2015</span></p>
+                            <p style="color: #002f5f;font-size: 12px;font-weight: normal;padding-top: 12px; margin-top: 0.28em; margin-bottom: 0.0em;">© 2015 LI&#8209;COR, Inc.</p>
+                        </td>
+                        <td class="TableStyle-footer-BodyA-Column1-Body1">
+                            <p style="color: #a0d2f0;font-size: 16px;font-weight: normal;margin-bottom: 0.561em; margin-top: 0.28em;">Contact Us:</p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="mailto:biohelp@licor.com" title="Email LI-COR support" alt="Email LI-COR support" class="footer">biohelp@licor.com</a>
+                            </p>
+                            <p style="font-size: 12px;color: #b8e4f1;text-decoration: none; margin-bottom:2px;"><a href="http://www.licor.com/bio" title="Go to the LI-COR website" target="_blank" alt="Go to the LI-COR website" class="footer">www.licor.com/bio</a>
+                            </p>
+                            <p style="font-size: 12px;color: #a0d2f0;text-decoration: none; margin-bottom:2px;">U.S.: 1-800-645-4260</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

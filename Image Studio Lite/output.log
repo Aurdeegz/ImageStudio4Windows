@@ -1,0 +1,2 @@
+2025-10-16 15:41:28,386 [AWT-EventQueue-0] ERROR easf.rssfeed.FeedReader  -An error occurred reading the RSS input stream XML: ParseError at [row,col]:[1,1]
+Message: Content is not allowed in prolog.
